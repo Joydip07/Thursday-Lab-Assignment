@@ -44,7 +44,7 @@ public class AccountDemo {
 
 	public static void main(String[] args) {
 		int ch,a;
-		AccountDetails anu=  new AccountDetails (123456,"Joydip Bardhan", 10000, "saving"); //creating object for StudentDetails class
+		AccountDetails joy =  new AccountDetails (123456,"Joydip Bardhan", 10000, "saving"); //creating object for StudentDetails class
 		System.out.println("enter following numbers to do operations\n 1.withdraw\n 2.Deposit\n.3check blance");
 		Scanner sc=new Scanner(System.in);
 		ch=sc.nextInt();
@@ -54,18 +54,18 @@ public class AccountDemo {
 		  case 1:
 			  System.out.println("enter amount you want to withdraw");
 			  a=sc.nextInt();
-			  anu.withdraw(a);
+			  joy.withdraw(a);
 		
 		    break;
 		  
 		  case 2:
 			  System.out.println("enter amount you want to deposit");
 			  a=sc.nextInt();
-			  anu.deposit(a);
+			  joy.deposit(a);
 		    break;
 		  case 3:
 			 
-			  anu.check();
+			  joy.check();
 		    break;
 		  
 		  
