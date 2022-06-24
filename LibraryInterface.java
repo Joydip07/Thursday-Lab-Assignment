@@ -1,20 +1,19 @@
 package OOps.inheritence;
-
-
-
 //interface
 interface LibraryUser
 {
 void registerAccount();
 void requestBook();
 }// end of library user interface
+
+//Child 1
 class KidUsers implements LibraryUser
 {
+//Declaring instance variable
 private int age;
 private String bookType;
 	
-
-    
+//Constructor  
 public KidUsers(int age, String bookType) {
 this.age = age;
 this.bookType = bookType;
@@ -57,13 +56,16 @@ System.out.println("oops,you are allowed to take only kids book");
 	
 }// end of kid user class
 
+//Child 2
+
 class AdultUser implements LibraryUser
 {
+//Declaring instance variable
 private int age;
 private String bookType;
 	
 
-
+//Constructor
 public AdultUser(int age, String bookType) {
 	
 this.age = age;
@@ -72,10 +74,9 @@ this.bookType = bookType;
 
 
 @Override
-public void registerAccount() {
+public void registerAccount()
+{
 		
-		
-		 
 if (age>12)
 {
 System.out.println("You have succesfully registered as an Adult Account");
@@ -90,9 +91,6 @@ System.out.println("Sorry Age must be greater than 12 to register as an adult");
 @Override
 public void requestBook() 
 {
-
-
-
 if (bookType=="Fiction")
 {
 System.out.println("Book Issued successfully,please return the book within 7 days");
@@ -113,12 +111,14 @@ System.out.println("Oops you arfe allowed to take only adult Fiction books");
 public class LibraryInterface {
 
 public static void main(String[] args) {
+//invoking Method
 KidUsers ku= new KidUsers(10, "Kids");
 ku.registerAccount();
 ku.requestBook();
+//Invoking Method
 AdultUser adu= new AdultUser(20, "Fiction");
 adu.registerAccount();
 adu.requestBook();
-	}
+}
 
 }
