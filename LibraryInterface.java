@@ -2,6 +2,7 @@ package OOps.inheritence;
 //interface
 interface LibraryUser
 {
+//abstract method
 void registerAccount();
 void requestBook();
 }// end of library user interface
