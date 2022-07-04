@@ -18,6 +18,8 @@ public class SumOfArrayElements {
        {
     	 arr[i]= sc.nextInt();
        }
+		
+		//Sum
 
 		for(i=0;i<size;i++)
 		{
